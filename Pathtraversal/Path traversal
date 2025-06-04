@@ -1,1 +1,3 @@
-Lỗ hổng web Path Traversal (còn được gọi là Directory Traversal) là một lỗ hổng bảo mật phổ biến trên các ứng dụng web. Lỗ hổng này cho phép kẻ tấn công truy cập vào các tệp tin và thư mục trên máy chủ web mà không được phép truy cập. Điều này có thể gây ra nhiều nguy hiểm cho hệ thống web và dữ liệu của người dùng.
+Lỗ hổng web Path Traversal (còn được gọi là Directory Traversal) là một lỗ hổng bảo mật phổ biến trên các ứng dụng web. 
+Lỗ hổng này cho phép kẻ tấn công truy cập vào các tệp tin và thư mục trên máy chủ web mà không được phép truy cập. 
+Điều này có thể gây ra nhiều nguy hiểm cho hệ thống web và dữ liệu của người dùng.
