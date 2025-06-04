@@ -11,7 +11,11 @@ https://www.thehacker.recipes/web/inputs/null-byte-injection
 
 https://owasp.org/www-community/attacks/Embedding_Null_Code
 
-Sau khi đọc xong thì nhận ra có vẻ lab này đã có lỗ hổng bởi nếu cho thêm null byte kiểu %00 thì tự động cái đuôi mở rộng đấy sẽ bị xóa đi. Từ đó có thể thấy ứng dụng không xử lý đúng các ký tự kết thúc NULL hậu tố
+Sau khi đọc xong thì nhận ra có vẻ lab này đã có lỗ hổng bởi nếu cho thêm null byte kiểu %00 thì tự động cái đuôi mở rộng đấy sẽ bị xóa đi .
+
+Ví dụ như kiểu ta viết payload /etc/passwd%00.png thì cái %00 sẽ giúp ta xóa phần đằng sau nó là .png trong khi web vẫn sẽ nhận cái .png và đưa payload đấy vượt qua, do đó có thể đọc được file /etc/passwd
+
+Từ đó có thể thấy ứng dụng không xử lý đúng các ký tự kết thúc NULL hậu tố
 
 Kịch bản tấn công: thêm đuôi %00.png vào sau /etc/passwd
 
