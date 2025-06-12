@@ -19,3 +19,5 @@ Có vẻ đã vào được user của mình nhưng không tìm ra gì nên có 
 Có vẻ như khác với lần đầu thì lần 2 ở đây đã có thêm lab home, có vẻ lab home là web mà đã đăng nhập vào được nên thử back về đấy xem, rồi sau đó thử quay về my account
 
 ![image](https://github.com/user-attachments/assets/d74ea2be-97e8-4e23-a56b-7f72c20c908b)
+
+Ngồi đọc solution với wup của người khác thì dễ hiểu là nếu không có được mã xác thực thứ 2 thì tại sao không bỏ qua bước đấy và tiến về đường dẫn /myaccount bởi có thể nó sẽ bị lỗ hổng ở đấy
