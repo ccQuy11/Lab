@@ -16,4 +16,5 @@ Thử filter thêm phát nữa
 
 Đã ok nên tiếp tục xóa user là xong 
 
-![Uploading image.png…]()
+<img width="1759" height="947" alt="image" src="https://github.com/user-attachments/assets/d8df3ec6-9e2f-4606-b0fe-d7a1fd2eb8d5" />
+
