@@ -6,6 +6,28 @@ Search thử aaaaaaaa
 
 <img width="1302" height="371" alt="image" src="https://github.com/user-attachments/assets/c9dfdbaf-938e-43ac-a285-fb93f0b8f98e" />
 
-Ở trong mã nguồn thì bài này dùng document.write để lấy đầu vào từ location.search, query chính là cái được lấy từ parameter search, thứ mà tôi nhập vào và có 1 cái thẻ img trong đó, tôi sẽ sử dụng payload aaaa"> <svg onload=alert(1)> cái aaaa"> là để đóng thẻ cũ, sau đó mở thẻ mới và do trong mã nguồn có sẵn "> nên  không cần thêm vào, thêm vào nó bị thừa
+Trong đoạn mã nguồn có 1 đoạn như này:
+
+    function trackSearch(query) {
+                            document.write('<img src="/resources/images/tracker.gif?searchTerms='+query+'">');
+                        }
+                        var query = (new URLSearchParams(window.location.search)).get('search');
+                        if(query) {
+                            trackSearch(query);
+                        }
+
+Khi attacker nhập bình thường 
+
+    </script>alert(1)</script>
+
+Đầu tiên đoạn mã sẽ được gửi đến var query, sau đó được kiểm tra với điều kiện if rồi cuối cùng mới đến được document.write. Trường hợp không có filter gì bên trên kết quả sẽ như sau:
+
+     document.write('<img src="/resources/images/tracker.gif?searchTerms='+</script>alert(1)</script>+'">');
+
+Điều này có nghĩa đoạn mã tấn công sẽ trở thành dạng văn bản thuần túy, do đó ta cần bypass bằng cách đặt dấu "> ở phía trước để thoát khỏi thuộc tính img trước, sau đó mới có thể thả payload vào
+
+Payload cuối:
+
+    "><script>alert(1)</script>
 
 <img width="1734" height="808" alt="image" src="https://github.com/user-attachments/assets/206f7ab2-4292-48e8-9c29-90c39e2f0be7" />
