@@ -1,1 +1,0 @@
-Tổng hợp các bài CTF: https://app.notion.com/p/CTFwup-269f9fa267b180a5b8bdc6522d54caac?source=copy_link
