@@ -15,3 +15,28 @@ Test kiểm chứng lại
 Payload cuối <code>?__proto__[transport_url]=data:,alert(1);
 
 <img width="1916" height="805" alt="image" src="https://github.com/user-attachments/assets/98c5f6c2-4b5b-4e8f-b502-e7b068c0709c" />
+
+<img width="1187" height="568" alt="image" src="https://github.com/user-attachments/assets/baec805a-16a1-4c74-9909-56755e132d67" />
+
+Dùng DOM Invader quét ra sources của máy chủ có thể bị tấn công theo 2 phương thức sau
+
+<img width="1917" height="1040" alt="image" src="https://github.com/user-attachments/assets/dbc7a9ff-18f3-498e-ae76-0d5f01455c07" />
+
+Mò vào sources thấy hàm searchLogger với thuộc tính src trong script có thể bị thao túng để chèn vào mã độc 
+
+<img width="1917" height="475" alt="image" src="https://github.com/user-attachments/assets/b3f97903-e58a-41fc-8488-825982f049bc" />
+
+Payload cuối <code>__proto__[transport_url]=data:,alert(1)
+
+<img width="1910" height="783" alt="image" src="https://github.com/user-attachments/assets/05c3dbac-3871-40f6-ac98-a52ef73da4b7" />
+
+<img width="1258" height="683" alt="image" src="https://github.com/user-attachments/assets/c3cdb69c-708d-4635-ae7e-0cca2f9cf4a7" />
+
+Sau khi DOM Invader quét và khai thác thì sự kiện alert() không được kích hoạt
+
+<img width="1348" height="446" alt="image" src="https://github.com/user-attachments/assets/4c9b4de9-85f4-4d8b-bf5e-ca2e39a1fab3" />
+
+Nhìn vào source thấy param khi thêm vào sẽ được thêm 1 vào cuối và khiến payload bị vô hiệu, lúc này cần thêm dấu - vào để biến biểu thức thành một phép tính hợp lệ. Hàm sẽ thực hiện việc gọi alert() trước để lấy giá trị (thường là undefined) và thực hiện biểu thực undefined + 1 
+
+<img width="1917" height="827" alt="image" src="https://github.com/user-attachments/assets/79e9fed3-2fb8-4f0e-bcd5-dc85ecf78495" />
+
