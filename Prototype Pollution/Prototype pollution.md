@@ -40,3 +40,16 @@ Nhìn vào source thấy param khi thêm vào sẽ được thêm 1 vào cuối 
 
 <img width="1917" height="827" alt="image" src="https://github.com/user-attachments/assets/79e9fed3-2fb8-4f0e-bcd5-dc85ecf78495" />
 
+<img width="1136" height="632" alt="image" src="https://github.com/user-attachments/assets/912cd2c4-c50b-4804-a391-a105a62c984f" />
+
+Máy chủ đã đặt các khóa phổ biến vào blacklist, nếu ghi chúng vào máy chủ sẽ tự động xóa 
+
+<img width="606" height="210" alt="image" src="https://github.com/user-attachments/assets/b82200a0-50e9-41aa-80a9-db7d5a448c25" />
+
+Tuy nhiên nó chỉ có thể xóa 1 lần nên có thể dùng payload sau để khi máy chủ xóa proto hoàn chỉnh thì vẫn có proto bị tách ra 
+
+    __pro__proto__to__[gadget]=payload
+
+<img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/1ed1b88e-83d0-4f45-9981-080c949fe124" />
+
+<img width="1295" height="765" alt="image" src="https://github.com/user-attachments/assets/3e5ab0cc-aa08-4f47-9759-94c62d140da4" />
